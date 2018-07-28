@@ -37,15 +37,11 @@ def tweet(twitter, text):
     twitter.update_status(text)
 
 
-def time_between_tweets(time_in_seconds):
-    time.sleep(time)
-
-
 def main():
     twitter = authenticate_twitter()
     while True:
-        tweet(twitter, 'This is a test tweet that has been sent using tweepy.py and the twitter API')
-        time_between_tweets(60 * 60)
+        tweet(twitter, 'test')
+        time.sleep(1200)
 
 
 if __name__ == '__main__':
