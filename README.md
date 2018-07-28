@@ -8,19 +8,23 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Installing the repository and running the script
 
-First you will need to clone the repository
+1.) First you will need to clone the repository
 
 ```
 git clone https://github.com/RyChrome/make_a_poll
 ```
 
-Then, you will need to go to https://developer.twitter.com/ and generate a Consumer Key, Consumer Secret, Access Key, and Access Secret. Once you have done this, create a config.ini file inside your project and place these strings on their own line in respective order. Don't share them with others, or they will be able to send tweets to your twitter account.
+2.) Then, you will need to go to https://developer.twitter.com/ and generate a Consumer Key, Consumer Secret, Access Key, and Access Secret. 
+
+3.) Once you have done this, create a config.ini file.
 
 ```
 touch config.ini
 ```
 
-And then fire up your favorite text editor or IDE and run the program
+4.) In your config.ini file place these strings on lines 1 through 4 in respective order. Make sure you don't share these with others, or they will be able to send tweets to your twitter account.
+
+Once you're done, fire up your favorite text editor or IDE and run the program
 
 ```
 python3 bot.py
